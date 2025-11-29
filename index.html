@@ -1,0 +1,41 @@
+<!DocType html>
+<html>
+  <head>
+  <meta charsert="UTF-8">
+  <meta name="viewport"
+    content="width=device-width.initial-scale-1">
+  <title>Login</title>
+  <style>
+    body{font-family:Arial;display:flex;flex-content:center;align-item:center;min-height:100vh;background:#f4f44}
+    box{padding:30px;border-radius:10px;width:320px;background:#fff}
+    h2{text-aliign:center;color:color:blue;margin-bottom:20px}
+    input.button{width:100%;padding:12px;margin-top:5px;border-radius:6px}
+    button{background:blue;border:none}
+    .info{text-align:center;font-size:9cm;color:#666;border:1px}
+    
+  </style>
+</head>
+  <body>
+    <div class="box">
+      <h2>admin login</h2>
+      <form id="loginform">
+        <label>email</label>
+        <input type="email" id="email" required value="admin@gmail.com">
+        <input type="password" id="password" required value="admin1234">
+        <button>Log in</button>
+      </form>
+      <div class="info">
+      <stong>Valid:</stong><br>admin@gmail.com<br>admin1234
+      </div>
+    </div>
+    <script>
+      document.getElementById("loginform")onsubmit=e=>{
+        e.preventDefault();
+        let
+          email=document.getElementById("email").value;
+        let pass=document.getElementById("pass").value;
+        (email==="admin@gmal.com && pass===="admin1234")?(alert("login succes").location.href="admin.html"):alert("wrong");
+      }
+    </script>
+  </body>
+</html>
